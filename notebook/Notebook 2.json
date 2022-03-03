@@ -17,7 +17,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "e6663cb3-a828-40e3-9ee3-d568f1ae1630"
+				"spark.autotune.trackingId": "149eeb0d-18b4-4190-8773-a6609ff8a70c"
 			}
 		},
 		"metadata": {
@@ -58,9 +58,7 @@
 				"source": [
 					"%%pyspark\r\n",
 					"df = spark.sql(\"SELECT * FROM nyctaxi.passengercountstats\")\r\n",
-					"df = df.repartition(1) # This ensures we'll get a single file during write()\r\n",
-					"df.write.mode(\"overwrite\").csv(\"/NYCTaxi/PassengerCountStats_csvformat\")\r\n",
-					"df.write.mode(\"overwrite\").parquet(\"/NYCTaxi/PassengerCountStats_parquetformat\")"
+					""
 				],
 				"execution_count": 1
 			}
