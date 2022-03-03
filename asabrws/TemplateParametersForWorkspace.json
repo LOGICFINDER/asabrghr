@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "asabrws"
+		},
+		"asabrws-WorkspaceDefaultSqlServer_connectionString": {
+			"value": ""
+		},
+		"asabrws-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://asabrdl.dfs.core.windows.net"
+		}
+	}
+}
